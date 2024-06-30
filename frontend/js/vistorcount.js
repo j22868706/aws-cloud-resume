@@ -1,6 +1,6 @@
 async function get_visitors() {
     try {
-        let response = await fetch('https://rkqfc6sxfrcbszxdakh6lqseme0ajaxz.lambda-url.us-east-2.on.aws/', {
+        let response = await fetch('https://k48zb5x5z8.execute-api.us-east-2.amazonaws.com/prod', {
             method: 'GET',
         });
         if (!response.ok) {
