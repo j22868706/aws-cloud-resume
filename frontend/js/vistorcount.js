@@ -7,9 +7,10 @@ async function get_visitors() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         let data = await response.json();
-        document.getElementById("visitors").innerHTML = data['count'];
-        console.log(data);
-        return data;
+        let count = JSON.parse(data.body).count;  // 解析嵌套的 JSON
+        document.getElementById("visitors").innerHTML = count;
+        console.log('Visitor count:', count);
+        return count;
     } catch (err) {
         console.error('Error fetching visitor count:', err);
         document.getElementById("visitors").innerHTML = "Error loading count";
