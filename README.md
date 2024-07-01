@@ -3,6 +3,7 @@
 ## About The Project
 
 I'd like to express my gratitude to Naveen Raj and Rishab for their invaluable tutorials on the Cloud Resume Challenge. This project involves hosting a static website on an AWS S3 bucket with a visitor counter implemented using AWS Lambda functions. The website is built using HTML, CSS, and JavaScript.
+<br/>
 
 ![architecture](./assets/images/architecture.png)
 
